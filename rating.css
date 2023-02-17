@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Zen+Maru+Gothic:wght@900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+html {
+    font-family: 'Overpass', sans-serif;
+    background: #141519;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    display: block;
+}
+.main{
+    width: 420px;
+    min-height: 100px;
+    padding: 2rem 2rem 3rem 2rem;
+    background: #1e2631;
+    border-radius: 1rem;
+}
+.star{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #272e38;
+    position: relative;
+}
+.star-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content{
+    margin: 2rem 0;
+}
+.title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.subtitle{
+    color: #858b96;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+}
+.rating{
+    list-style: none;
+    color: #818b99;
+    display: flex;
+    justify-content: space-evenly;
+}
+.rating-item{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #272e39;
+    position: relative;
+}
+.rating-item:hover{
+    background: #fc7613;
+    cursor: pointer;
+    color: #fff;
+    transition: ease 0.5s;
+}
+.rating-item.active{
+    background: #aaa;
+    color: #fff;
+}
+.rating-number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.error--msg{
+    margin-top: 1.5rem;
+    color: rgb(180, 53, 53);
+    text-align: center;
+    display: none;
+}
+.submitted{
+    display: none;
+}
+.submit{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 2rem;
+    background: #fc7613;
+    color: #fff;
+    font-size: 1.05rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    outline: none;
+    transition: ease 0.3s;
+}
+.submit:hover{
+    background: #fff;
+    color: #fc7613;
+}
+/*SUMITTED SCREEN*/
+.header{
+    display: flex;
+    justify-content: center;
+}
+.result{
+    text-align: center;
+    color: #fc7613;
+    background: #272e38;
+    margin: 2rem 3rem 0;
+    border-radius: 2rem;
+    line-height: 2.6rem;
+}
+.submitted--content{
+    text-align: center;
+}
+/*Responsive*/
+@media screen and (max-width: 767px){
+    .main{
+        width: 300px;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+    .star{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .content{
+        margin: 1.25rem 0;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .subtitle{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    .rating-item{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .submit{
+        height: 2.75rem;
+    }
+    .submitted{
+        padding-top: 2rem;
+    }
+    .result{
+        margin: 2rem 2rem 1rem 2rem;
+    }
+    .result-text{
+        font-size: 1rem;
+    }
+}
